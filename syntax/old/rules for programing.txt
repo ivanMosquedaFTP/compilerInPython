@@ -1,0 +1,25 @@
+<algebraic_expresion> ::= <term> ((plus|minus)  <term>)* 
+
+<term> ::= <factor> ((times|divide) <factor>)*
+
+<factor> ::= number 
+         | <algebraic_id>
+         | (minus) <factor> 
+         | paren_l <algebraic_expresion> paren_r
+
+<algebraic_id> ::= number
+                   
+
+
+-------------------------------------------------------------------------
+
+<string_expression> ::= <chain_details> (plus <chain_details>)*
+
+<chain_details> ::= chain
+                 | <string_id>
+
+
+<string_id> ::= chain
+
+
+

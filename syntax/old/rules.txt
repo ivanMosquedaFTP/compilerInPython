@@ -1,0 +1,22 @@
+<define_int> ::= "int" <id> <define_int_tail>
+
+<define_int_tail> ::= ";" 
+                  | "=" <number> <define_int_continuation>
+                  | "," <id> <define_int_continuation>
+
+<define_int_continuation> ::= ";" 
+                          | "=" <number> <define_int_continuation>
+                          | "," <id> <define_int_continuation>
+
+<id> ::= <letter> | <letter> <alphanumeric>*
+
+<number> ::= <digit> | <digit> <digit>*
+
+<letter> ::= "a" | "b" | ... | "z" | "A" | "B" | ... | "Z"
+<alphanumeric> ::= <letter> | <digit>
+<digit> ::= "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
+
+
+<define_string>::= "string" <id>
+
+

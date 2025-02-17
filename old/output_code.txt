@@ -1,0 +1,12 @@
+
+int x = 90;
+
+string = "asdasdasd";
+
+
+for (i=0; i<=20;i++){
+    print("Hola")
+}
+
+
+

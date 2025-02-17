@@ -1,0 +1,8 @@
+001_only_check_tokens
+002_with_spaces
+003_concats
+004_chat
+005_block_comments
+006_semicolons
+007_bugs
+008_errors
