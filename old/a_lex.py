@@ -63,7 +63,7 @@ t_RBRACE      = r'\}'
 t_LBRACKET    = r'\['
 t_RBRACKET    = r'\]'
 t_SEMICOLON   = r';'
-t_DOT   = r'\.'
+t_DOT         = r'\.'
 
 # Literales
 t_ignore = ' \t'  # Ignorar espacios y tabulaciones
@@ -78,8 +78,6 @@ def t_INT_LITERAL(t):
     r'\d+'
     t.value = int(t.value)
     return t
-
-
 
 def t_STRING_LITERAL(t):
     r'\"([^\\\n]|(\\.))*?\"'

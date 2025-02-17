@@ -1,7 +1,6 @@
 import lexico_errores.lexical as lexical
 import lexico_errores.err as err
 from tabulate import tabulate
- 
 
 #file = "test/008_errors.txt"
 
